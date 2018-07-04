@@ -40,7 +40,7 @@ public class SpringEchoBot implements ApplicationListener<ApplicationReadyEvent>
 
     @Inject
     private ViberBot bot;
-    String [] words = {"Как дела?!","Привет!","Пока!","Ок","Зачем?","Нет, уходи","Плати мне деньги"};
+    String [] words = {"Как дела?!","Привет!","Пока!","Ок","Зачем?","Нет, уходи","Плати мне деньги", "Всмысле", "эээ", ";)", "(mad)", "(sick)" };
 
 
     @Inject
