@@ -71,7 +71,7 @@ public class SpringEchoBot implements ApplicationListener<ApplicationReadyEvent>
 
         ViberMessage viberMessage = new ViberMessage(words.length);
 
-        bot.onMessageReceived((event, message, response) -> response.send(words[message.hashCode()])); // echos everything back
+        bot.onMessageReceived((event, message, response) -> response.send(words[(viberMessage.getran())])); // echos everything back
         bot.onConversationStarted(event -> Futures.immediateFuture(Optional.of( // send 'Hi UserName' when conversation is started
                 new TextMessage("Hi " + event.getUser().getName()))));
     }
