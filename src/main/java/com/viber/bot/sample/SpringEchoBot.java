@@ -43,7 +43,7 @@ public class SpringEchoBot implements ApplicationListener<ApplicationReadyEvent>
     String [] words = {"Как дела?!","Привет!","Пока!","Ок","Зачем?","Нет, уходи",
         "Плати мне деньги", "Всмысле", "эээ", "(money)", "(mad)", "(sick)", 
        "Подумай над смыслом своей жизни, пожалуйста", "не понимаю о чем ты..",
-        "(flirt)","минуточку","(cry)", "(scream)"};
+        "(flirt)","минуточку","(cry)", "(scream)","Здесь был Филя"};
 
 
     @Inject
