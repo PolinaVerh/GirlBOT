@@ -48,7 +48,7 @@ public class SpringEchoBot implements ApplicationListener<ApplicationReadyEvent>
     "Когда я готов доверять и следовать своей энергии, она ведет меня к людям, у которых я могу многому научиться. Энергия всегда ведет меня к ситуациям, в которых мое обучение будет самым интенсивным. © Шакти Гавэйн",
 "(nerd)", "(cool)", "cool", "(eek)", "(dizzy)", "что-то мне не нравится твой тон.",
 "Здесь был Филя(heart)", "Ни один победитель не верит в случайность. © Фридрих Ницше",
-"Что??", "сформулируй свою мысль правильно, а потом уже пиши мне"}
+"Что??", "сформулируй свою мысль правильно, а потом уже пиши мне"};
 
     @Inject
 
@@ -71,7 +71,7 @@ public class SpringEchoBot implements ApplicationListener<ApplicationReadyEvent>
 
         ViberMessage viberMessage = new ViberMessage(words.length);
 
-        bot.onMessageReceived((event, message, response) -> response.send(words[(viberMessage.getran())])); // echos everything back
+        bot.onMessageReceived((event, message, response) -> response.send(words[message.hashCode()])); // echos everything back
         bot.onConversationStarted(event -> Futures.immediateFuture(Optional.of( // send 'Hi UserName' when conversation is started
                 new TextMessage("Hi " + event.getUser().getName()))));
     }
