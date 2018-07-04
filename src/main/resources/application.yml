@@ -1,0 +1,10 @@
+application.viber-bot:
+ auth-token: "4816fd4eb627d667-498438cce96b098-9bcda5d789d6f700"
+ webhook-url: "https://myyboot.herokuapp.com"
+ name: "Bottr"
+ avatar: "https://d1ic4altzx8ueg.cloudfront.net/finder-au/wp-uploads/2015/09/exchange-bot.jpg"
+
+logging:
+  level:
+    root: DEBUG
+
